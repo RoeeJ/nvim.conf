@@ -73,6 +73,7 @@ local default_plugins = {
 
   {
     "nvim-treesitter/nvim-treesitter",
+    lazy = false,
     init = function()
       require("core.utils").lazy_load "nvim-treesitter"
     end,
@@ -137,6 +138,7 @@ local default_plugins = {
 
   {
     "neovim/nvim-lspconfig",
+    lazy = false,
     init = function()
       require("core.utils").lazy_load "nvim-lspconfig"
     end,
