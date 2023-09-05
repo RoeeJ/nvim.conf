@@ -1,4 +1,4 @@
-local overrides = require("custom.configs.overrides")
+local overrides = require "custom.configs.overrides"
 
 ---@type NvPluginSpec[]
 local plugins = {
@@ -25,7 +25,7 @@ local plugins = {
   -- override plugin configs
   {
     "williamboman/mason.nvim",
-    opts = overrides.mason
+    opts = overrides.mason,
   },
 
   {
@@ -35,6 +35,9 @@ local plugins = {
 
   {
     "nvim-tree/nvim-tree.lua",
+    dependencies = {
+      "nvim-tree/nvim-web-devicons"
+    },
     opts = overrides.nvimtree,
   },
 

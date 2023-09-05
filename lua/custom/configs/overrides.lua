@@ -71,6 +71,8 @@ M.mason = {
 
 -- git support in nvimtree
 M.nvimtree = {
+    sort_by = "case_sensitive",
+
   git = {
     enable = true,
   },
