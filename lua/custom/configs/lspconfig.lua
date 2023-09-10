@@ -18,5 +18,30 @@ end
 lspconfig["tsserver"].setup {
   on_attach = on_attach,
   capabilities = vim.tbl_deep_extend("force", capabilities, require("cmp_nvim_lsp").default_capabilities()),
-  filetypes = { "javascript", "javascriptreact", "javascript.jsx", "typescript", "typescriptreact", "typescript.tsx", "svelte" },
+  filetypes = {
+    "javascript",
+    "javascriptreact",
+    "javascript.jsx",
+    "typescript",
+    "typescriptreact",
+    "typescript.tsx",
+    "svelte",
+  },
+}
+
+lspconfig["tsserver"].setup {
+  cmd = { "gopls", "--remote=auto" },
+  capabilties = {
+    textDocuemnt = {
+      completion = {
+        completionItem = {
+          snippetSupport = true,
+        },
+      },
+    },
+  },
+  init_options = {
+    usePlaceholders = true,
+    completeUnimported = true,
+  },
 }
