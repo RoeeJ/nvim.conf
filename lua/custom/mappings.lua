@@ -26,6 +26,7 @@ M.general = {
     ["<leader>/"] = { "<Cmd>Telescope current_buffer_fuzzy_find<CR>", "[S]earch In Buffer" },
     ["<leader>sl"] = { "<Cmd>Telescope lsp_definitions<CR>", "[S]earch [L]sp" },
     ["<leader>tt"] = { "<Cmd>NvimTreeToggle<CR>", "[T]oggle [T]ree" },
+    ["<leader>lr"] = { "<Cmd>LspRestart<CR>", "[L]SP [R]estart" },
     ["q"] = { "<Nop>" },
   },
   i = {
