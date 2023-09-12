@@ -27,6 +27,7 @@ M.general = {
     ["<leader>sl"] = { "<Cmd>Telescope lsp_definitions<CR>", "[S]earch [L]sp" },
     ["<leader>tt"] = { "<Cmd>NvimTreeToggle<CR>", "[T]oggle [T]ree" },
     ["<leader>lr"] = { "<Cmd>LspRestart<CR>", "[L]SP [R]estart" },
+    ["<leader>lg"] = { "<Cmd>LazyGit<CR>", "[L]azy [G]it" },
     ["q"] = { "<Nop>" },
   },
   i = {

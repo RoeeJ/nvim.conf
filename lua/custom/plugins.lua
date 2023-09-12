@@ -36,7 +36,7 @@ local plugins = {
   {
     "nvim-tree/nvim-tree.lua",
     dependencies = {
-      "nvim-tree/nvim-web-devicons"
+      "nvim-tree/nvim-web-devicons",
     },
     opts = overrides.nvimtree,
   },
@@ -49,7 +49,14 @@ local plugins = {
       require("better_escape").setup()
     end,
   },
-
+  {
+    "kdheepak/lazygit.nvim",
+    cmd = {"LazyGit","LazyGitConfig"},
+    -- optional for floating window border decoration
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+    },
+  },
   -- To make a plugin not be loaded
   -- {
   --   "NvChad/nvim-colorizer.lua",
