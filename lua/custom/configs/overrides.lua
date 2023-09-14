@@ -20,6 +20,7 @@ M.treesitter = {
     "rust",
     "svelte",
     "haskell",
+    "zig"
   },
   indent = {
     enable = true,
@@ -67,6 +68,9 @@ M.mason = {
 
     -- rust
     "rust-analyzer",
+
+    -- zig
+    "zig",
   },
 }
 

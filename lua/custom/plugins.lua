@@ -51,11 +51,15 @@ local plugins = {
   },
   {
     "kdheepak/lazygit.nvim",
-    cmd = {"LazyGit","LazyGitConfig"},
+    cmd = { "LazyGit", "LazyGitConfig" },
     -- optional for floating window border decoration
     dependencies = {
       "nvim-lua/plenary.nvim",
     },
+  },
+  {
+    "ziglang/zig.vim",
+    lazy = false,
   },
   -- To make a plugin not be loaded
   -- {
