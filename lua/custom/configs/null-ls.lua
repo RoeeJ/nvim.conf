@@ -19,8 +19,9 @@ local sources = {
   null_ls.builtins.formatting.goimports,
 
   -- rust
-  null_ls.builtins.formatting.rustfmt
-
+  null_ls.builtins.formatting.rustfmt,
+  -- zig
+  null_ls.builtins.formatting.zigfmt,
 }
 
 null_ls.setup {

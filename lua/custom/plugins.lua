@@ -11,6 +11,7 @@ local plugins = {
       -- format & linting
       {
         "jose-elias-alvarez/null-ls.nvim",
+        lazy = false,
         config = function()
           require "custom.configs.null-ls"
         end,
@@ -59,6 +60,13 @@ local plugins = {
   },
   {
     "ziglang/zig.vim",
+    lazy = false,
+  },
+  {
+    "RaafatTurki/hex.nvim",
+    config = function()
+      require("hex").setup()
+    end,
     lazy = false,
   },
   -- To make a plugin not be loaded
