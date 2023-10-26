@@ -2,26 +2,26 @@ local M = {}
 
 M.treesitter = {
   ensure_installed = {
-    "vim",
-    "lua",
-    "html",
-    "css",
-    "javascript",
-    "typescript",
-    "tsx",
     "c",
-    "markdown",
-    "markdown_inline",
+    "css",
     "go",
     "gomod",
     "gosum",
-    "typescript",
+    "haskell",
+    "html",
     "javascript",
+    "javascript",
+    "kotlin",
+    "lua",
+    "markdown",
+    "markdown_inline",
     "rust",
     "svelte",
-    "haskell",
+    "tsx",
+    "typescript",
+    "typescript",
+    "vim",
     "zig",
-    "kotlin"
   },
   indent = {
     enable = true,
@@ -42,39 +42,25 @@ M.treesitter = {
 
 M.mason = {
   ensure_installed = {
-    -- lua stuff
-    "lua-language-server",
-    "stylua",
-
-    -- web dev stuff
-    "css-lsp",
-    "html-lsp",
-    "typescript-language-server",
-    "tailwindcss-language-server",
-    "deno",
-    "prettier",
-    "rustywind",
-
-    -- c/cpp stuff
-    "clangd",
     "clang-format",
-
-    -- golang
+    "clangd",
+    "css-lsp",
+    "deno",
     "gofumpt",
     "goimports",
     "gopls",
-
-    -- Svelte
-    "svelte-language-server",
-
-    -- rust
+    "html-lsp",
+    "java-language-server",
+    "kotlin-language-server",
+    "lua-language-server",
+    "prettier",
     "rust-analyzer",
-
-    -- zig
+    "rustywind",
+    "stylua",
+    "svelte-language-server",
+    "tailwindcss-language-server",
+    "typescript-language-server",
     "zls",
-
-    -- TeamCity
-    "kotlin-language-server"
   },
 }
 

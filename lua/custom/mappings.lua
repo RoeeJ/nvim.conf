@@ -28,6 +28,8 @@ M.general = {
     ["<leader>tt"] = { "<Cmd>NvimTreeToggle<CR>", "[T]oggle [T]ree" },
     ["<leader>lr"] = { "<Cmd>LspRestart<CR>", "[L]SP [R]estart" },
     ["<leader>lg"] = { "<Cmd>LazyGit<CR>", "[L]azy [G]it" },
+    ["<leader>mr"] = { "<Cmd>:make<CR>", "[M]ake [R]un" },
+    ["<leader>mrz"] = { "<Cmd>:compiler zig<CR><Cmd>:make build run<CR>", "[M]ake [R]un [Z]ig" },
     ["q"] = { "<Nop>" },
   },
   i = {
