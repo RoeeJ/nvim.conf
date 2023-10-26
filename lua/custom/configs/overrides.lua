@@ -20,7 +20,8 @@ M.treesitter = {
     "rust",
     "svelte",
     "haskell",
-    "zig"
+    "zig",
+    "kotlin"
   },
   indent = {
     enable = true,
@@ -70,7 +71,10 @@ M.mason = {
     "rust-analyzer",
 
     -- zig
-    "zig",
+    "zls",
+
+    -- TeamCity
+    "kotlin-language-server"
   },
 }
 
