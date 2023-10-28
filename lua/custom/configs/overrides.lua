@@ -4,6 +4,7 @@ M.treesitter = {
   ensure_installed = {
     "c",
     "css",
+    "elixir",
     "go",
     "gomod",
     "gosum",
