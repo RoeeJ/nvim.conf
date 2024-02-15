@@ -1,0 +1,5 @@
+require("config.keymaps.build")
+require("config.keymaps.lsp")
+require("config.keymaps.telescope")
+require("config.keymaps.ui")
+require("config.keymaps.util")

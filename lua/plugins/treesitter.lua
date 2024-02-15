@@ -1,0 +1,26 @@
+return {
+  "nvim-treesitter/nvim-treesitter",
+  opts = {
+    ensure_installed = {
+      "c",
+      "css",
+      "elixir",
+      "go",
+      "gomod",
+      "gosum",
+      "haskell",
+      "html",
+      "javascript",
+      "kotlin",
+      "lua",
+      "markdown",
+      "markdown_inline",
+      "rust",
+      "svelte",
+      "tsx",
+      "typescript",
+      "vim",
+      "zig",
+    },
+  },
+}
