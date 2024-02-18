@@ -3,6 +3,7 @@ return {
   opts = {
     ensure_installed = {
       "autotools-language-server",
+      "codelldb",
       "clang-format",
       "clangd",
       "css-lsp",

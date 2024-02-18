@@ -1,0 +1,5 @@
+vim.keymap.set("n", "<leader>th", "<Cmd>ToggleTerm name=termh direction=horizontal<CR>", { desc = "[T]oggle Terminal" })
+vim.keymap.set("t", "<leader>th", "<Cmd>ToggleTerm name=termh direction=horizontal<CR>", { desc = "[T]oggle Terminal" })
+vim.keymap.set("n", "<leader>tv", "<Cmd>ToggleTerm name=termv direction=vertical<CR>", { desc = "[T]oggle Terminal" })
+vim.keymap.set("t", "<leader>tv", "<Cmd>ToggleTerm name=termv direction=vertical<CR>", { desc = "[T]oggle Terminal" })
+vim.keymap.set("t", "<esc>", [[<C-\><C-n>]], {})
