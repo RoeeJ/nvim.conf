@@ -2,6 +2,9 @@ return {
   "neovim/nvim-lspconfig",
   opts = {
     servers = {
+      html = {
+        filetypes = { "html", "css", "elixir", "eelixir", "heex" },
+      },
       emmet_ls = {
         filetypes = { "html", "css", "elixir", "eelixir", "heex" },
       },
