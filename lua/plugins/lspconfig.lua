@@ -2,6 +2,28 @@ return {
   "neovim/nvim-lspconfig",
   opts = {
     servers = {
+      emmet_ls = {
+        filetypes = { "html", "css", "elixir", "eelixir", "heex" },
+      },
+      tailwindcss = {
+        filetypes = { "elixir", "elixir-eex", "eelixir", "phoenix-heex", "html" },
+        init_options = {
+          userLanguages = {
+            eelixir = "html",
+            elixir = "html",
+            heex = "html",
+          },
+        },
+        settings = {
+          tailwindCSS = {
+            experimental = {
+              classRegex = {
+                'class[:]\\s*"([^"]*)"',
+              },
+            },
+          },
+        },
+      },
       clangd = {
         cmd = {
           "clangd",

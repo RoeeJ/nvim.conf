@@ -44,6 +44,10 @@ return {
     },
     filesystem_watchers = {
       enable = true,
+      ignore_dirs = {
+        "node_modules",
+        "deps",
+      },
     },
     actions = {
       open_file = {

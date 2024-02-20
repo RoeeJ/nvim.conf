@@ -4,11 +4,14 @@ return {
     ensure_installed = {
       "c",
       "css",
+      "eex",
       "elixir",
       "go",
       "gomod",
       "gosum",
       "haskell",
+      "heex",
+      "erlang",
       "html",
       "javascript",
       "kotlin",
@@ -22,5 +25,6 @@ return {
       "vim",
       "zig",
     },
+    highlight = { enable = true },
   },
 }
