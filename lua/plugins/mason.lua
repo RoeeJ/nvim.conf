@@ -3,11 +3,12 @@ return {
   opts = {
     ensure_installed = {
       "autotools-language-server",
-      "codelldb",
       "clang-format",
       "clangd",
+      "codelldb",
       "css-lsp",
       "deno",
+      "elixir-ls",
       "gofumpt",
       "goimports",
       "gopls",
