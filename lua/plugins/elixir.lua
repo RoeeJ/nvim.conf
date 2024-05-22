@@ -7,14 +7,16 @@ return {
     local elixirls = require("elixir.elixirls")
 
     elixir.setup({
-      nextls = { enable = true },
+      nextls = { enable = false },
+      credo = { enable = false },
       elixirls = {
         enable = true,
+        cmd = "elixir-ls",
         settings = elixirls.settings({
           fetchDeps = true,
           suggestSpecs = true,
           dialyzerEnabled = false,
-          enableTestLenses = true,
+          enableTestLenses = false,
         }),
         on_attach = function(client, bufnr)
           vim.keymap.set("n", "<space>fp", ":ElixirFromPipe<cr>", { buffer = true, noremap = true })
